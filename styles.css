@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #5f5f5f;
+  }
+  
+  .calendar-container {
+    background-color: #202020;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0.1); #000000;
+    width: 300px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1a191933;
+    color: white;
+  }
+  
+  .calendar-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: #ddd;
+  }
+  
+  .calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #1111111;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .calendar-weekdays div {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .calendar-days div {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .calendar-days div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style for today's date */
+  .today {
+    background-color: rgba(240, 147, 26, 0.74);
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+  }
